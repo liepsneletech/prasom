@@ -1,0 +1,1097 @@
+@use "custom";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+.instant-chat-img {
+  position: fixed;
+  margin-top: 53.5rem;
+  z-index: 3;
+  width: 8.2rem;
+  height: 8.2rem;
+}
+
+.instant-chat-box {
+  position: relative;
+}
+
+.checkout-instant-chat-img {
+  position: fixed;
+  margin-top: 59.8rem;
+  z-index: 3;
+  width: 8.2rem;
+  height: 8.2rem;
+}
+
+/* ********************************************************/
+/* GENERAL COMPONENTS */
+/* ********************************************************/
+
+.container {
+  max-width: 132.5rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.row,
+.navbar-brand,
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+.heading-primary {
+  display: inline-block;
+  font-family: Poppins, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #060616;
+}
+
+.heading-secondary {
+  font-family: Poppins, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #2c2c33;
+}
+
+.heading-tertiary {
+  font-family: Poppins, sans-serif;
+  font-size: 2.4rem;
+  color: #2c2c33;
+}
+
+.heading-quaternary {
+  font-size: 1.6rem;
+  padding-top: 1rem;
+  font-weight: 400;
+}
+
+/* ********************************************************/
+/* HEADER SECTION*/
+/* ********************************************************/
+
+/* ----------General---------- */
+
+header {
+  height: 8.8rem;
+  padding-top: 2.4rem;
+  padding-bottom: 2rem;
+  background-color: #fff;
+}
+
+.prasom-logo {
+  height: 4rem;
+}
+
+.navbar {
+  z-index: 2;
+}
+
+.navbar-nav {
+  gap: 4rem;
+}
+
+/* ----------Mobile menu toggler---------- */
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+.hamburger-close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar-toggler {
+  position: relative;
+}
+
+.hamburger-open-icon[name="open-icon"] {
+  opacity: 100;
+}
+
+:not(.collapsed) .hamburger-open-icon[name="open-icon"] {
+  opacity: 0;
+}
+
+.collapsed .hamburger-open-icon[name="open-icon"] {
+  opacity: 100;
+  transition: all 0.3s ease;
+}
+
+.collapsed .hamburger-close-icon[name="close-icon"] {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* ----------Paslaugos dropdown---------- */
+
+header .dropdown-toggle[aria-expanded="true"] .dropdown-arrow-down {
+  display: none;
+}
+
+header .dropdown-toggle[aria-expanded="true"] .dropdown-arrow-up {
+  display: inline-block;
+}
+
+header .dropdown-toggle[aria-expanded="false"] .dropdown-arrow-up {
+  display: none;
+}
+
+.paslaugos-submeniu.show {
+  border: none;
+  border-top: 2px solid #f2f1ff;
+  background-color: #fff;
+  padding: 0;
+  margin-top: 3.2rem !important;
+}
+
+.paslaugos-dropdown-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  gap: 7.5rem;
+}
+
+.paslaugos-dropdown-item-style {
+  font-size: 1.6rem;
+  color: #2c2c33;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+  padding: 0;
+  text-decoration: none;
+}
+
+.paslaugos-dropdown-item-style img {
+  margin-right: 1.6rem;
+}
+
+/* ----------Languages dropdown---------- */
+
+.dropdown-lang.show {
+  border: none !important;
+  margin-top: 0 !important;
+  background: transparent;
+}
+
+.dropdown-lang .dropdown-item {
+  padding: 0;
+}
+
+.header-flag-icon-img,
+.mobile-flag-img {
+  width: 24px;
+  height: 24px;
+}
+
+/* --- desktop view --- */
+
+@media all and (min-width: 992px) {
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* --- mobile view--- */
+@media (max-width: 991px) {
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+
+/* ----------Nav links---------- */
+
+.nav-link:link,
+.nav-link:visited,
+.dropdown-toggle {
+  text-decoration: none;
+  color: #2c2c33 !important;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 0 !important;
+  line-height: 1.5;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:active,
+.nav-link:hover,
+.nav-link:active {
+  color: #5551ff !important;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-arrow-down,
+.dropdown-arrow-up {
+  display: inline-block;
+  font-size: 12px;
+  padding-left: 7px;
+}
+
+/* ----------Nav buttons---------- */
+
+.header-btn-outline:link,
+.header-btn-outline:visited,
+.header-btn-full:link,
+.header-btn-full:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  border-radius: 2.4rem;
+  padding: 1.2rem 2.4rem;
+}
+
+.header-btn-outline:link,
+.header-btn-outline:visited {
+  box-shadow: inset 0px 0px 0px 2px #5551ff;
+  color: #060616;
+  font-weight: 500;
+  height: 4.8rem;
+}
+
+.header-btn-outline:hover,
+.header-btn-outline:active {
+  background-color: rgba(85, 81, 255, 0.12);
+}
+
+.header-btn-full:link,
+.header-btn-full:visited {
+  background-color: #5551ff;
+  color: #fff;
+  margin-left: -2.4rem;
+}
+
+.header-btn-full:hover,
+.header-btn-full:active {
+  background-color: #4340dd;
+}
+
+.btn-daugiau-purple:link,
+.btn-daugiau-purple:visited {
+  text-decoration: none;
+  color: #5551ff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.btn-daugiau-purple:hover,
+.btn-daugiau-purple:active {
+  text-decoration: none;
+  color: #4340dd;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* ********************************************************/
+/*    HERO SECTION */
+/* ********************************************************/
+
+/* ----------General---------- */
+
+.section-hero {
+  background: rgb(255, 241, 244);
+  background: radial-gradient(
+    circle,
+    rgba(255, 241, 244, 1) 0%,
+    rgba(237, 236, 255, 1) 100%
+  );
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 1.6rem;
+  z-index: 1;
+  gap: 8px;
+  margin: 0 !important;
+}
+
+.hero-row-height {
+  min-height: 41rem;
+}
+
+.hero-img {
+  padding-top: 6.5rem;
+  max-width: 89%;
+}
+
+/* ----------Carousel-indicators---------- */
+
+.carousel-indicators button {
+  background-color: #5551ff !important;
+  opacity: 15% !important;
+  border: none !important;
+  border-radius: 50%;
+  margin: 0 !important;
+}
+
+.carousel-indicators .active button:nth-of-type(1) {
+  width: 9px !important;
+  height: 9px !important;
+}
+
+.carousel-indicators button:nth-of-type(1) {
+  width: 7px;
+  height: 7px;
+}
+
+.carousel-indicators button:nth-of-type(2) {
+  width: 7px;
+  height: 7px;
+}
+
+.carousel-indicators button:nth-of-type(3) {
+  width: 5px;
+  height: 5px;
+}
+
+.carousel-indicators button:nth-of-type(4) {
+  width: 5px;
+  height: 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #5551ff !important;
+  opacity: 100% !important;
+  width: 9px !important;
+  height: 9px !important;
+}
+
+.carousel-indicators button:hover {
+  background-color: #5551ff !important;
+  opacity: 100% !important;
+}
+
+/* ---------Hero buttons------------ */
+
+.hero-btn:link,
+.hero-btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 3.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #5551ff;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  color: #4340dd;
+}
+
+.hero-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #514f58;
+  padding-top: 0.8rem;
+  padding-right: 20rem;
+}
+
+.hero-btn-arrow {
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+/* ********************************************************/
+/* PASLAUGOS SECTION */
+/* ********************************************************/
+
+/* ---------- General ---------- */
+
+.section-paslaugos {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #fafafa;
+}
+
+.section-paslaugos h2 {
+  margin-bottom: 5.6rem;
+}
+
+.section-paslaugos h3 {
+  margin-bottom: 1.6rem;
+  line-height: 1.5;
+}
+
+/* ---------- Paslaugos columns style ---------- */
+
+.paslaugos-col-style-pink {
+  border: 1px solid #ff3666;
+  border-top: 8px solid #ff3666;
+  border-radius: 8px;
+  margin: 2.4rem 0;
+  padding: 4.8rem 2.4rem 2.4rem 2.4rem;
+  min-height: 69.4rem;
+}
+
+.paslaugos-col-style-purple {
+  border: 1px solid #5551ff;
+  border-top: 32px solid #5551ff;
+  border-radius: 8px;
+  position: relative;
+  padding: 4.8rem 2.4rem 2.4rem 2.4rem;
+  min-height: 74rem;
+}
+
+.paslaugos-col-style-yellow {
+  border: 1px solid #f2ca50;
+  border-top: 8px solid #f2ca50;
+  border-radius: 8px;
+  margin-top: 2.4rem;
+  padding: 4.8rem 2.4rem 2.4rem 2.4rem;
+  min-height: 69.4rem;
+}
+
+.paslaugos-col-style-green {
+  border: 1px solid #0fa958;
+  border-top: 8px solid #0fa958;
+  border-radius: 8px;
+  margin-top: 2.4rem;
+  padding: 4.8rem 2.4rem 2.4rem 2.4rem;
+  min-height: 69.4rem;
+}
+
+.paslaugos-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.paslaugos-price {
+  font-family: Poppins, sans-serif;
+  position: relative;
+  display: inline-block;
+  font-size: 3.2rem;
+  color: #2c2c33;
+  margin-bottom: 1.6rem;
+  padding-right: 4px;
+  margin-top: 4px;
+}
+
+.paslaugos-price-box {
+  display: flex;
+  align-items: flex-center;
+}
+
+.paslaugos-price-tag {
+  position: relative;
+  font-size: 1.4rem !important;
+  line-height: 1.4;
+  color: #2c2c33;
+}
+
+.paslaugos-price-pink {
+  font-family: Poppins, sans-serif;
+  position: relative;
+  display: inline-block;
+  font-size: 3.2rem;
+  color: #ff3666;
+}
+
+.paslaugos-price-tag-pink {
+  position: absolute;
+  font-size: 1.4rem !important;
+  color: #ff3666;
+  padding-left: 4px;
+}
+
+.paslaugos-discount-price-box {
+  display: flex;
+  align-items: flex-start;
+}
+
+.paslaugos-price-discount {
+  font-family: Poppins, sans-serif;
+  margin-left: 5.6rem;
+  font-size: 2rem;
+  color: #2c2c33;
+  text-decoration: line-through;
+  text-decoration-color: #666;
+  text-decoration-thickness: 2px;
+  margin-top: 7px;
+}
+
+.paslaugos-price-tag-discount {
+  font-size: 1.4rem !important;
+  color: #2c2c33;
+  margin-top: 7px;
+}
+
+.most-popular-tag {
+  font-family: Poppins, sans-serif;
+  width: 100%;
+  font-size: 1.3rem;
+
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  padding-bottom: 12px;
+  padding-top: 7px;
+  top: -29px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.paslaugos-description {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+  color: #514f58;
+}
+
+.paslaugos-list-item {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #2c2c33;
+  margin-bottom: 1.6rem;
+  display: flex;
+}
+
+.paslaugos-list-icon {
+  margin-right: 1rem;
+  width: 24px;
+  height: 24px;
+}
+
+/* ---------- Paslaugos buttons ---------- */
+
+.paslaugos-btn-full:link,
+.paslaugos-btn-full:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  border-radius: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #5551ff;
+  color: #fff;
+}
+
+.paslaugos-btn-full:hover,
+.paslaugos-btn-full:active {
+  background-color: #4340dd;
+}
+
+.btn-border-pink,
+.btn-border-yellow,
+.btn-border-green {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  border-radius: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  color: #2c2c33;
+  font-weight: 500;
+}
+
+.btn-border-pink {
+  box-shadow: inset 0px 0px 0px 2px #ff3666;
+  margin-bottom: 1.6rem;
+}
+
+.btn-border-pink:hover {
+  border-color: #e32553;
+  background-color: #fff5f6;
+  color: #2c2c33;
+}
+
+.btn-border-purple {
+  margin-bottom: 1.6rem;
+}
+
+.btn-border-yellow {
+  box-shadow: inset 0px 0px 0px 2px #f2ca50;
+  margin-bottom: 1.6rem;
+}
+.btn-border-yellow:hover {
+  border-color: #e6bc3a;
+  background-color: #fffdf1;
+  color: #2c2c33;
+}
+
+.btn-border-green {
+  box-shadow: inset 0px 0px 0px 2px #0fa958;
+  margin-bottom: 1.6rem;
+}
+
+.btn-border-green:hover {
+  border-color: #159d55;
+  background-color: #f3f9f5;
+  color: #2c2c33;
+}
+
+/* ---------- Paslaugos gutter ---------- */
+
+.custom-gutter-paslaugos > [class*="col-"]:first-child {
+  padding-left: 0;
+}
+
+.custom-gutter-paslaugos > [class*="col-"]:last-child {
+  padding-right: 0;
+}
+
+/* ********************************************************/
+/* SUSISIEKTI SECTION */
+/* ********************************************************/
+
+.section-susisiekti {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.section-susisiekti h2 {
+  margin-bottom: 0.8rem;
+}
+
+.section-susisiekti input,
+.section-susisiekti textarea {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 1.2rem;
+  margin-top: 0 !important;
+  border-radius: 4px;
+  border-color: #d9d9d9;
+  resize: none;
+}
+
+.section-susisiekti input::placeholder,
+.section-susisiekti textarea::placeholder {
+  color: #a7a7a7;
+}
+
+.susisiekti-btn-full {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  border-radius: 2.4rem;
+  margin-top: 2.4rem;
+  padding: 1.2rem 10rem;
+  background-color: #5551ff;
+  color: #fff;
+  border: none;
+}
+
+.susisiekti-btn-arrow {
+  margin-left: 6px;
+}
+
+.susisiekti-btn-full:hover {
+  background-color: #4340dd;
+}
+
+.susisiekti-message-input {
+  min-height: 12rem;
+}
+
+.susisiekti-img {
+  max-height: 41.3rem;
+}
+
+.susisiekti-img-mobile {
+  max-height: 23.3rem;
+}
+
+.custom-gutter-susisiekti > [class*="col-"]:nth-child(2),
+.custom-gutter-susisiekti > [class*="col-"]:nth-child(4),
+.custom-gutter-susisiekti > [class*="col-"]:nth-child(5),
+.custom-gutter-susisiekti > [class*="col-"]:nth-child(6) {
+  padding-right: 0;
+}
+
+.custom-gutter-susisiekti > [class*="col-"]:nth-child(1),
+.custom-gutter-susisiekti > [class*="col-"]:nth-child(3),
+.custom-gutter-susisiekti > [class*="col-"]:nth-child(5) {
+  padding-left: 0;
+}
+
+/* ********************************************************/
+/* REKOMENDACIJOS SECTION */
+/* ********************************************************/
+
+.section-rekomendacijos {
+  padding-top: 8.8rem;
+  padding-bottom: 13.6rem;
+  background: radial-gradient(
+    circle,
+    rgba(255, 241, 244, 1) 0%,
+    rgba(237, 236, 255, 1) 100%
+  );
+}
+
+.section-rekomendacijos h2 {
+  margin-bottom: 4.8rem;
+}
+
+.quote-icon-img {
+  position: absolute;
+  top: 0;
+  left: 3.2rem;
+}
+
+.rekomendacijos-col-style {
+  border: 1px solid #5551ff;
+  border-radius: 8px;
+  padding: 3.2rem;
+}
+
+.rekomendacijos-card-style {
+  background: transparent;
+  border: none;
+  padding-top: 2rem;
+}
+
+.card-body {
+  min-height: 25.7rem;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.quote-author {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #2c2c33;
+  font-weight: 500;
+  margin-bottom: 4;
+}
+
+.quote-brand {
+  font-size: 1.4rem;
+  color: #808080;
+  margin: 0 !important;
+}
+
+.rekomendacijos-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 21rem;
+}
+
+.author-info-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote-logo img {
+  filter: grayscale(100%);
+  width: 4.8rem;
+}
+
+.rekomendacijos-indicators {
+  position: absolute;
+  left: 7px;
+  bottom: -5.8rem;
+  z-index: 2;
+  gap: 8px;
+  margin: 0 !important;
+}
+
+.custom-gutter-rekomendacijos > [class*="col-"]:first-child {
+  padding-left: 0 !important;
+}
+
+.custom-gutter-rekomendacijos > [class*="col-"]:last-child {
+  padding-right: 0;
+}
+
+/* ********************************************************/
+/* FEATURED IN SECTION */
+/* ********************************************************/
+.logos-box {
+  padding: 2.7rem 3rem 1.5rem 3rem;
+  justify-content: space-between;
+}
+
+.logos-box img {
+  filter: grayscale(100%);
+  height: 5.6rem;
+}
+
+.logos-item-column {
+  display: inline-block !important;
+}
+
+.section-featured-in.container {
+  padding: 0;
+}
+/* ********************************************************/
+/* FOOTER SECTION */
+/* ********************************************************/
+.footer {
+  min-height: 51.7rem;
+  padding-top: 9.6rem;
+  background-color: #5551ff;
+  color: #fff;
+}
+
+.footer-logo-box {
+  margin-bottom: 4rem;
+}
+
+.footer-logo-box img {
+  width: 17.9rem;
+}
+
+.footer-soc-icons-box {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-address-box,
+.footer-mobile-box,
+.footer-email-box {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.footer-address-box,
+.footer-mobile-box {
+  margin-bottom: 12px;
+}
+
+.footer-email-box {
+  margin-bottom: 4rem;
+}
+
+.footer-paslaugos-box,
+.footer-apie-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-contacts {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.footer-menu-link:link,
+.footer-menu-link:visited {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:active {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.footer h4 {
+  margin-bottom: 2.6rem;
+  display: inline-block;
+}
+
+.footer-main-columns {
+  margin-bottom: 13.4rem !important;
+  justify-content: space-between;
+}
+
+.footer-policy,
+.footer-copyright {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.footer-subscription-input {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 1.2rem;
+  border-radius: 4px;
+  border-color: #fff;
+  background: transparent;
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
+.form-control.footer-subscription-input:focus {
+  background: transparent;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.footer-subscription-input::placeholder {
+  color: #fff;
+}
+
+.footer-btn {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  width: 100%;
+  border: none;
+  border-radius: 2.8rem;
+  line-height: 1.5;
+  color: #2c2c33;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.copyright-row {
+  padding-bottom: 2.4rem;
+}
+
+/* ********************************************************/
+/* POP-UPS */
+/* ********************************************************/
+
+.checkout-pop-up-card.show {
+  display: block !important;
+}
+
+.checkout-pop-up-card-form.show {
+  display: block !important;
+}
+
+.checkout-pop-up-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50.6rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #bbc0d040;
+  background-color: #fff;
+  z-index: 5;
+  padding: 8rem 6.8rem 8rem 6.8rem;
+}
+
+.checkout-pop-up-card-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 74rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #bbc0d040;
+  background-color: #fff;
+  z-index: 5;
+  padding: 6.4rem 5.6rem 6.4rem 5.6rem;
+}
+
+.checkout-pop-up-card-form input,
+.checkout-pop-up-card-form textarea {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 1.2rem;
+  margin-top: 0 !important;
+  border-radius: 4px;
+  border-color: #d9d9d9;
+  resize: none;
+}
+
+.checkout-pop-up-card.smaller-padding {
+  padding: 6.4rem 5.6rem 6.4rem 5.6rem;
+}
+
+.pop-up-close-icon-img {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+}
+
+.pop-up-close-btn,
+.pop-up-close-btn:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.row-footer-pop-up {
+  display: flex;
+  align-items: center;
+}
+
+.pop-up-heading {
+  margin-bottom: 2.4rem;
+  font-family: Poppins, sans-serif;
+  font-size: 3.2rem;
+  color: #2c2c33;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.pop-up-heading-smaller-margin {
+  margin-bottom: 8px;
+  font-family: Poppins, sans-serif;
+  font-size: 3.2rem;
+  color: #2c2c33;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.checkout-pop-up-text {
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.checkout-pop-up-card-form .uzklausa-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 2.8rem;
+}
+
+.checkout-pop-up-card-form .susisiekti-btn-full {
+  margin-top: 0;
+}
+
+.checkout-pop-up-card-form .uzklausa-heading {
+  margin-bottom: 1.6rem;
+}

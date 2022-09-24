@@ -1,0 +1,108 @@
+/* ********************************************************/
+/*    CUSTOM SECTION STYLES */
+/* ********************************************************/
+
+#map {
+  height: 48.2rem;
+}
+
+.section-kontaktai-hero-bg {
+  background-color: #f6f6ff;
+}
+
+.section-rekvizitai {
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
+  background-color: #fafafa;
+}
+
+.rekvizitai-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.section-rekvizitai .heading-tertiary {
+  margin-bottom: 1.6rem;
+  line-height: 1.5;
+}
+
+.section-kontaktai-hero-bg .kontaktai-address-box,
+.section-kontaktai-hero-bg .kontaktai-mobile-box,
+.section-kontaktai-hero-bg .kontaktai-email-box {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.kontaktai-address-box,
+.kontaktai-mobile-box {
+  margin-bottom: 8px;
+}
+
+.section-kontaktai-hero-bg .heading-secondary {
+  font-size: 4rem;
+  margin-bottom: 2.4rem;
+}
+
+.kontaktai-text-box {
+  padding-top: 12rem;
+}
+
+/* ********************************************************/
+/* BOOTSTRAP BETWEEN BREAKPOINTS */
+/* ********************************************************/
+
+/* 1200px ≤ col-lg ≤ 1360px */
+@media (min-width: 1200px) and (max-width: 1365.98px) {
+}
+
+/* 992px ≤ col-lg ≤ 1200px */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* ********************************************************/
+
+/* 768px ≤ col-md ≤ 992px */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* ********************************************************/
+
+/* 576px ≤ col-sm ≤ 768px */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* col < 576px */
+
+@media (max-width: 579px) {
+  .section-rekvizitai {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #fafafa;
+  }
+}
+
+/* ********************************************************/
+/* CUSTOM BREAKPOINTS */
+/* ********************************************************/
+
+/*  320px ≤ col ≤ 992px */
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+}
+
+/* ********************************************************/
+/*  320px ≤ col ≤ 576px */
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+}
+
+/* < 320px (Small mobile) */
+
+@media (max-width: 320px) {
+}

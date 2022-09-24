@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Title -->
+    <title>Naujienos | Prašom</title>
+    <!-- Description -->
+    <meta
+      name="description"
+      content="Įmonių IT ūkio priežiūra ir duomenų centro paslaugos"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d86ffac582.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media_queries.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img
+              class="prasom-logo"
+              src="assets/img/prasom-logo-179.png"
+              srcset="
+                assets/img/prasom-logo-179.png,
+                assets/img/prasom-logo-357.png 2x,
+                assets/img/prasom-logo-536.png 3x
+              "
+              alt="Prasom logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            active
+          >
+            <span class="hamburger-open-icon" name="open-icon"
+              ><img
+                src="assets/icons/hamburger-open.svg"
+                alt="hamburger-mobile-menu"
+            /></span>
+            <span class="hamburger-close-icon" name="close-icon"
+              ><img
+                src="assets/icons/hamburger-close.svg"
+                alt="hamburger-mobile-menu"
+            /></span>
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end bg-white"
+            id="navbarCollapse"
+          >
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item dropdown has-megamenu">
+                <a
+                  href="#home"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  >Paslaugos
+                  <span class="dropdown-arrow-down">
+                    <i class="fa-solid fa-caret-down"></i> </span
+                  ><span class="dropdown-arrow-up">
+                    <i class="fa-solid fa-caret-up"></i> </span
+                ></a>
+
+                <div
+                  class="dropdown-menu megamenu paslaugos-submeniu"
+                  aria-labelledby="dropdownMenuLink"
+                  role="menu"
+                >
+                  <div class="row">
+                    <div class="col-12 px-0">
+                      <ul class="list-unstyled paslaugos-dropdown-list">
+                        <li>
+                          <a
+                            class="paslaugos-dropdown-item-style"
+                            href="it-ukio-prieziura.html"
+                            ><img
+                              src="assets/icons/paslaugos-it-ūkio-priežiūra-icon.png"
+                              alt=""
+                            />
+                            IT ūkio priežiūra</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="paslaugos-dropdown-item-style"
+                            href="dedikuoto-serverio-nuoma.html"
+                            ><img
+                              src="assets/icons/paslaugos-dedikuoto-serverio-nuoma-icon.png"
+                              alt=""
+                            />
+                            Dedikuoto serverio nuoma</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="paslaugos-dropdown-item-style"
+                            href="web-hostingas.html"
+                            ><img
+                              src="assets/icons/paslaugos-web hostingas-icon.png"
+                              alt=""
+                            />
+                            Web hostingas</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="paslaugos-dropdown-item-style"
+                            href="technikos-nuoma.html"
+                            ><img
+                              src="assets/icons/paslaugos-technikos nuoma-icon.png"
+                              alt=""
+                            />
+                            Technikos nuoma</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="apie-mus.html" class="nav-link">Apie mus</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="kontaktai.html" class="nav-link">Kontaktai</a>
+              </li>
+
+              <li class="nav-item d-lg-block d-none">
+                <div class="dropdown">
+                  <a
+                    href="index.html"
+                    class="dropdown-toggle"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                    ><img
+                      src="assets/flags/lt-flag.png"
+                      alt="lithuania flag"
+                      class="header-flag-icon-img" />
+                    <span class="dropdown-arrow-down">
+                      <i class="fa-solid fa-caret-down"></i> </span
+                    ><span class="dropdown-arrow-up">
+                      <i class="fa-solid fa-caret-up"></i> </span
+                  ></a>
+                  <ul
+                    class="dropdown-menu dropdown-lang pt-0"
+                    aria-labelledby="dropdownMenuLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          src="assets/flags/en-flag.png"
+                          alt="england flag"
+                          class="header-flag-icon-img"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item d-lg-none d-inline-block">
+                <div class="mobile-flags-menu-box d-flex">
+                  <a href="#"
+                    ><img
+                      src="assets/flags/lt-flag.png"
+                      alt="lithuania flag"
+                      class="mobile-flag-img"
+                  /></a>
+
+                  <a href="#"
+                    ><img
+                      src="assets/flags/en-flag.png"
+                      alt="england flag"
+                      class="mobile-flag-img"
+                  /></a>
+                </div>
+              </li>
+
+              <li class="nav-item mobile-btn mobile-btn-second">
+                <a href="klientu-zona.html" class="header-btn-outline"
+                  >Klientų zona</a
+                >
+              </li>
+              <li class="nav-item mobile-btn mobile-btn-first">
+                <a href="nuotoline-pagalba.html" class="header-btn-full"
+                  >Nuotolinė pagalba</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="instant-chat-box container d-flex justify-content-end">
+        <img
+          src="assets/icons/instant-chat-icon.png"
+          class="instant-chat-img d-block"
+          alt="instant chat icon"
+        />
+      </div>
+    </main>
+
+    <footer class="footer container-fluid">
+      <div class="card border-0 checkout-pop-up-card d-none">
+        <button class="btn p-0 pop-up-close-btn">
+          <img
+            src="assets/icons/pop-up-close-icon.png"
+            alt="close icon"
+            class="pop-up-close-icon-img"
+          />
+        </button>
+        <div
+          class="row row-footer-pop-up text-center d-flex align-items-center"
+        >
+          <div>
+            <div class="col-12">
+              <h4 class="pop-up-heading">Naujienlaiškis užprenumeruotas!</h4>
+            </div>
+
+            <div class="col-12">
+              <img
+                src="assets/img/checkout-envelope-order-done.png"
+                alt="envelope illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row gx-0 footer-main-columns">
+          <div class="col-xl-3 col-lg-3 col-12">
+            <div class="footer-logo-box">
+              <img
+                src="assets/img/prasom-logo-white-179.png"
+                srcset="
+                  assets/img/prasom-logo-white-179.png,
+                  assets/img/prasom-logo-white-357.png 2x,
+                  assets/img/prasom-logo-white-536.png 3x
+                "
+                alt="prasom logo"
+              />
+            </div>
+            <div class="footer-contacts">
+              <div class="footer-address-box">
+                <img src="assets/icons/footer-address-icon.svg" alt="" />
+                <span>Adreso g. 45, Vilnius, 12545 </span>
+              </div>
+              <div class="footer-mobile-box">
+                <img src="assets/icons/footer-mobile-icon.svg" alt="" />
+                <span>+37052542888</span>
+              </div>
+              <div class="footer-email-box">
+                <img src="assets/icons/footer-email-icon.svg" alt="" />
+                <span>vilnius@prasom.lt</span>
+              </div>
+            </div>
+            <div class="footer-soc-icons-box">
+              <a href="#"
+                ><img src="assets/icons/fb-logo.svg" alt="facebook-logo"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/in-logo.svg" alt="linkedin logo"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/ig-logo.svg" alt="instagram logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+            <h4 class="heading-quaternary">Paslaugos</h4>
+            <ul class="footer-paslaugos-box">
+              <li>
+                <a href="nuotoline-pagalba.html" class="footer-menu-link"
+                  >Nuotolinė pagalba</a
+                >
+              </li>
+              <li>
+                <a href="klientu-zona.html" class="footer-menu-link"
+                  >Klientų zona</a
+                >
+              </li>
+              <li>
+                <a href="it-ukio-prieziura.html" class="footer-menu-link"
+                  >IT ūkio priežiūra</a
+                >
+              </li>
+              <li>
+                <a href="dedikuoto-serverio-nuoma.html" class="footer-menu-link"
+                  >Dedikuoto serverio nuoma</a
+                >
+              </li>
+              <li>
+                <a href="web-hostingas.html" class="footer-menu-link"
+                  >Web hostingo planai</a
+                >
+              </li>
+              <li>
+                <a href="technikos-nuoma.html" class="footer-menu-link"
+                  >Technikos nuoma</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+            <h4 class="heading-quaternary">Apie mus</h4>
+            <ul class="footer-apie-box">
+              <li>
+                <a href="kontaktai.html" class="footer-menu-link">Kontaktai</a>
+              </li>
+              <li>
+                <a href="naujienos.html" class="footer-menu-link">Naujienos</a>
+              </li>
+              <li><a href="duk.html" class="footer-menu-link">DUK</a></li>
+              <li>
+                <a href="privatumo-politika.html" class="footer-menu-link"
+                  >Privatumo politika</a
+                >
+              </li>
+              <li>
+                <a href="slapukų-politika.html" class="footer-menu-link"
+                  >Slapukų politika</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-5 col-12">
+            <div class="footer-subscription-box">
+              <h4 class="heading-quaternary">
+                Prenumeruokite mūsų naujienlaiškį!
+              </h4>
+              <label for="inputSubscribe" class="form-label"></label>
+              <input
+                type="email"
+                class="form-control footer-subscription-input"
+                placeholder="El. paštas"
+                id="inputSubscribe"
+              />
+              <button class="footer-btn" type="submit">Prenumeruoti</button>
+              <div class="subscription-popup-success"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-0 justify-content-between copyright-row">
+          <div class="col-lg-auto col-sm-auto">
+            <div class="footer-policy">
+              <a href="privatumo-politika.html" class="footer-menu-link"
+                >Privatumo politika</a
+              >
+              |
+              <a href="slapukų-politika.html" class="footer-menu-link"
+                >Slapukų politika</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-auto col-sm-auto col-12">
+            <div class="footer-copyright">
+              Visos teisės saugomos &#169; 2022 prasom.lt
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CUSTOM SCRIPTS -->
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+
+    <script>
+      const btnNavEl = document.querySelector(".btn-mobile-nav");
+      const headerEl = document.querySelector(".header");
+
+      btnNavEl.addEventListener("click", function () {
+        headerEl.classList.toggle("nav-open");
+      });
+    </script>
+  </body>
+</html>

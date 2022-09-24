@@ -1,0 +1,462 @@
+@charset "UTF-8";
+/* ********************************************************/
+/*    CUSTOM SECTION STYLES */
+/* ********************************************************/
+.section-paslaugos-inner-hero-pink {
+  background-color: #fff5f7;
+}
+
+.section-paslaugos-inner-hero-green {
+  background-color: #f3faf6;
+}
+
+.section-paslaugos-inner-hero-yellow {
+  background-color: #fffcf1;
+}
+
+.section-paslaugos-inner-hero-purple {
+  background-color: #f6f6ff;
+}
+
+.paslaugos-inner-hero-height-pink {
+  min-height: 46.4rem;
+}
+
+.paslaugos-inner-hero-height-purple {
+  min-height: 46.4rem;
+}
+
+.paslaugos-inner-hero-height-yellow {
+  min-height: 48.8rem;
+}
+
+.paslaugos-inner-hero-height-green {
+  min-height: 41.6rem;
+}
+
+.paslaugos-inner-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #514f58;
+  padding-top: 0.8rem;
+  padding-right: 12rem;
+}
+
+.paslaugos-inner-img,
+.paslaugos-inner-img-mobile {
+  padding-top: 6.5rem;
+  max-width: 100%;
+}
+
+.paslaugos-inner-info-title {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: #2c2c33;
+  margin-bottom: 1.6rem;
+}
+
+.paslaugos-inner-info-text {
+  font-size: 1.6rem;
+  color: #514f58;
+  line-height: 1.5;
+}
+
+.paslaugos-inner-info-text:first-of-type {
+  margin-bottom: 1.6rem;
+}
+
+.paslaugos-inner-info-text:last-of-type {
+  margin-bottom: 3.2rem;
+}
+
+.section-paslaugos-inner-plan-info .paslaugos-col-style-pink,
+.section-paslaugos-inner-plan-info .paslaugos-col-style-yellow,
+.section-paslaugos-inner-plan-info .paslaugos-col-style-green,
+.section-paslaugos-inner-plan-info .paslaugos-col-style-green,
+.section-paslaugos-inner-plan-info .paslaugos-col-style-green {
+  margin: 0;
+  min-height: 54.7rem;
+}
+
+.section-paslaugos-inner-plan-info .paslaugos-col-style-purple {
+  margin: 0;
+  min-height: 55.9rem;
+}
+
+.section-paslaugos-inner-plan-info .btn-border-pink {
+  box-shadow: none;
+  background-color: #ff3666;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.section-paslaugos-inner-plan-info .btn-border-pink:hover {
+  box-shadow: none;
+  background-color: #e32553;
+  color: #fff;
+}
+
+.section-paslaugos-inner-plan-info .btn-border-green {
+  box-shadow: none;
+  background-color: #0fa958;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.section-paslaugos-inner-plan-info .btn-border-green:hover {
+  box-shadow: none;
+  background-color: #159d55;
+  color: #fff;
+}
+
+.section-paslaugos-inner-plan-info .btn-border-yellow {
+  box-shadow: none;
+  background-color: #f2ca50;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.section-paslaugos-inner-plan-info .btn-border-yellow:hover {
+  box-shadow: none;
+  background-color: #e6bc3a;
+  color: #fff;
+}
+
+.section-paslaugos-inner-plan-info .btn-border-purple {
+  box-shadow: none;
+  background-color: #5551ff;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.section-paslaugos-inner-plan-info .btn-border-purple:hover {
+  box-shadow: none;
+  background-color: #4340dd;
+  color: #fff;
+}
+
+.section-paslaugos-inner-plan-info .heading-secondary {
+  padding-bottom: 5.6rem;
+  margin-bottom: 0;
+}
+
+.section-paslaugos-inner-plan-info .heading-tertiary {
+  margin-bottom: 1.6rem;
+}
+
+.section-paslaugos-inner-plan-info {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #fafafa;
+}
+
+.paslaugos-inner-info-box .paslaugos-list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.section-kiti-planai .paslaugos-col-style-purple {
+  min-height: 61rem;
+  margin-top: 0;
+}
+
+.section-kiti-planai .paslaugos-col-style-green,
+.section-kiti-planai .paslaugos-col-style-yellow,
+.section-kiti-planai .paslaugos-col-style-pink {
+  min-height: 60rem;
+  margin-top: 0;
+}
+
+.section-kiti-planai {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #fafafa;
+}
+
+.section-kiti-planai .heading-secondary {
+  margin-bottom: 5.6rem;
+}
+
+.section-kiti-planai .heading-tertiary {
+  margin-bottom: 1.6rem;
+}
+
+.section-kodel-verta-rinktis-purple {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #f6f6ff;
+}
+
+.section-kodel-verta-rinktis-pink {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #fff5f7;
+}
+
+.section-kodel-verta-rinktis-pink .heading-secondary,
+.section-kodel-verta-rinktis-purple .heading-secondary {
+  margin-bottom: 4rem;
+}
+
+.section-susisiekti .uzklausa-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding-right: 24.4rem;
+}
+
+.uzklausa-heading {
+  margin-bottom: 1.6rem !important;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
+.custom-gutter-uzklausa > [class*=col-]:nth-child(3) {
+  padding-right: 0 !important;
+}
+
+.custom-gutter-uzklausa > [class*=col-]:nth-child(4) {
+  padding-left: 0 !important;
+}
+
+.kodel-verta-rinktis-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.section-kodel-verta-rinktis .card-body {
+  min-height: 0;
+}
+
+.kodel-verta-rinktis-number {
+  font-size: 4rem;
+  color: #5551ff;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.kodel-verta-rinktis-col-style {
+  border: 1px solid #5551ff;
+  border-radius: 8px;
+  padding: 2.4rem;
+}
+
+.kodel-verta-rinktis-card-style {
+  background: transparent;
+  border: none;
+}
+
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(1),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(4) {
+  padding-left: 0 !important;
+}
+
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(3),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(6) {
+  padding-right: 0 !important;
+}
+
+.paslaugos-inner-pink {
+  margin: 0;
+}
+
+.section-paslaugos-inner-plan-info .paslaugos-text-box {
+  gap: 4.8rem;
+}
+
+.section-paslaugos-inner-plan-info .paslaugos-list-item:last-of-type {
+  margin-bottom: 0 !important;
+}
+
+.technikos-nuoma-one {
+  margin-bottom: 8rem;
+}
+
+.technikos-nuoma-two {
+  margin-bottom: 4.4rem;
+}
+
+/* ********************************************************/
+/* BOOTSTRAP BETWEEN BREAKPOINTS */
+/* ********************************************************/
+/* 1200px ≤ col-lg ≤ 1360px */
+@media (min-width: 1200px) and (max-width: 1365.98px) {
+  .container {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
+/* 992px ≤ col-lg ≤ 1200px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .section-kiti-planai .paslaugos-col-style-purple {
+    min-height: 74.5rem;
+  }
+
+  .section-kiti-planai .paslaugos-col-style-green,
+.section-kiti-planai .paslaugos-col-style-yellow,
+.section-kiti-planai .paslaugos-col-style-pink {
+    min-height: 73.5rem;
+    margin-top: 0;
+  }
+
+  .section-susisiekti .uzklausa-description {
+    padding-right: 5rem;
+  }
+}
+/* ********************************************************/
+/* 768px ≤ col-md ≤ 992px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .paslaugos-inner-info-box {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .section-kiti-planai .paslaugos-col-style-purple {
+    min-height: 79.8rem;
+  }
+
+  .section-kiti-planai .paslaugos-col-style-green,
+.section-kiti-planai .paslaugos-col-style-yellow,
+.section-kiti-planai .paslaugos-col-style-pink {
+    min-height: 78.8rem;
+    margin-top: 0;
+  }
+
+  .custom-gutter-paslaugos > [class*=col-]:nth-child(2) {
+    padding-right: 1.2rem !important;
+  }
+
+  .custom-gutter-paslaugos > [class*=col-]:nth-child(3) {
+    padding-left: 1.2rem !important;
+  }
+
+  .custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(2),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(4) {
+    padding-right: 0 !important;
+  }
+
+  .custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(3),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(5) {
+    padding-left: 0 !important;
+  }
+
+  .custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(3) {
+    padding-right: 1.2rem !important;
+  }
+
+  .custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(4) {
+    padding-left: 1.2rem !important;
+  }
+
+  .section-paslaugos-inner-plan-info .paslaugos-col-style-purple {
+    margin-bottom: 0 !important;
+  }
+}
+/* ********************************************************/
+/* 576px ≤ col-md ≤ 768px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .custom-gutter-paslaugos > [class*=col-]:nth-child(1) {
+    padding-right: 0 !important;
+  }
+
+  .custom-gutter-paslaugos > [class*=col-]:nth-child(2) {
+    padding-left: 0 !important;
+  }
+
+  .custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(2),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(4) {
+    padding-right: 0 !important;
+  }
+
+  .custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(3),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(5) {
+    padding-left: 0 !important;
+  }
+
+  .custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(3) {
+    padding-right: 1.2rem !important;
+  }
+
+  .custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(4) {
+    padding-left: 1.2rem !important;
+  }
+
+  .technikos-nuoma-one {
+    margin-bottom: 10.4rem;
+  }
+
+  .technikos-nuoma-two {
+    margin-bottom: 10.4rem;
+  }
+}
+/* col < 576px */
+@media (max-width: 579px) {
+  .paslaugos-inner-description {
+    padding-right: 0;
+  }
+
+  .custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(2),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(3),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(5),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(6) {
+    padding-left: 0 !important;
+  }
+
+  .custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(1),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(2),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(4),
+.custom-gutter-kodel-verta-rinktis > [class*=col-]:nth-of-type(5) {
+    padding-right: 0 !important;
+  }
+
+  .technikos-nuoma-one {
+    margin-bottom: 10.4rem;
+  }
+
+  .technikos-nuoma-two {
+    margin-bottom: 10.4rem;
+  }
+}
+/* ********************************************************/
+/* CUSTOM BREAKPOINTS */
+/* ********************************************************/
+/*  320px ≤ col ≤ 992px */
+@media (min-width: 320px) and (max-width: 991.98px) {
+  .paslaugos-inner-description {
+    margin-bottom: 17.8rem;
+  }
+
+  .paslaugos-inner-img-mobile {
+    padding-top: 0;
+  }
+
+  .section-paslaugos-inner-plan-info .custom-gutter-paslaugos > [class*=col-]:first-child {
+    padding-right: 0;
+  }
+
+  .section-paslaugos-inner-plan-info .paslaugos-col-style-pink,
+.section-paslaugos-inner-plan-info .paslaugos-col-style-purple,
+.section-paslaugos-inner-plan-info .paslaugos-col-style-yellow,
+.section-paslaugos-inner-plan-info .paslaugos-col-style-green {
+    margin-bottom: 5.6rem;
+  }
+
+  .section-susisiekti .uzklausa-description {
+    padding-right: 0;
+  }
+}
+/* ********************************************************/
+/*  320px ≤ col ≤ 576px */
+/* < 320px (Small mobile) */
+@media (max-width: 320px) {
+  .section-paslaugos-inner-plan-info .paslaugos-col-style-pink {
+    margin-bottom: 5.6rem;
+  }
+
+  .section-susisiekti .uzklausa-description {
+    padding-right: 0;
+  }
+}
+
+/*# sourceMappingURL=paslaugos-inner.css.map */

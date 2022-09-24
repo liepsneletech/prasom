@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Title -->
+    <title>Mokėjimo periodas | Prašom</title>
+    <!-- Description -->
+    <meta
+      name="description"
+      content="Įmonių IT ūkio priežiūra ir duomenų centro paslaugos"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d86ffac582.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img
+              class="prasom-logo"
+              src="assets/img/prasom-logo-179.png"
+              srcset="
+                assets/img/prasom-logo-179.png,
+                assets/img/prasom-logo-357.png 2x,
+                assets/img/prasom-logo-536.png 3x
+              "
+              alt="Prasom logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            active
+          >
+            <span class="hamburger-open-icon" name="open-icon"
+              ><img
+                src="assets/icons/hamburger-open.svg"
+                alt="hamburger-mobile-menu"
+            /></span>
+            <span class="hamburger-close-icon" name="close-icon"
+              ><img
+                src="assets/icons/hamburger-close.svg"
+                alt="hamburger-mobile-menu"
+            /></span>
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end bg-white"
+            id="navbarCollapse"
+          >
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item dropdown has-megamenu">
+                <a
+                  href="#home"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  >Paslaugos
+                  <span class="dropdown-arrow-down">
+                    <i class="fa-solid fa-caret-down"></i> </span
+                  ><span class="dropdown-arrow-up">
+                    <i class="fa-solid fa-caret-up"></i> </span
+                ></a>
+
+                <div
+                  class="dropdown-menu megamenu paslaugos-submeniu"
+                  aria-labelledby="dropdownMenuLink"
+                  role="menu"
+                >
+                  <div class="row">
+                    <div class="col-12 px-0">
+                      <ul class="list-unstyled paslaugos-dropdown-list">
+                        <li>
+                          <a
+                            class="paslaugos-dropdown-item-style"
+                            href="it-ukio-prieziura.html"
+                            ><img
+                              src="assets/icons/paslaugos-it-ūkio-priežiūra-icon.png"
+                              alt=""
+                            />
+                            IT ūkio priežiūra</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="paslaugos-dropdown-item-style"
+                            href="dedikuoto-serverio-nuoma.html"
+                            ><img
+                              src="assets/icons/paslaugos-dedikuoto-serverio-nuoma-icon.png"
+                              alt=""
+                            />
+                            Dedikuoto serverio nuoma</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="paslaugos-dropdown-item-style"
+                            href="web-hostingas.html"
+                            ><img
+                              src="assets/icons/paslaugos-web hostingas-icon.png"
+                              alt=""
+                            />
+                            Web hostingas</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="paslaugos-dropdown-item-style"
+                            href="technikos-nuoma.html"
+                            ><img
+                              src="assets/icons/paslaugos-technikos nuoma-icon.png"
+                              alt=""
+                            />
+                            Technikos nuoma</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="apie-mus.html" class="nav-link">Apie mus</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="kontaktai.html" class="nav-link">Kontaktai</a>
+              </li>
+
+              <li class="nav-item d-lg-block d-none">
+                <div class="dropdown">
+                  <a
+                    href="index.html"
+                    class="dropdown-toggle"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                    ><img
+                      src="assets/flags/lt-flag.png"
+                      alt="lithuania flag"
+                      class="header-flag-icon-img" />
+                    <span class="dropdown-arrow-down">
+                      <i class="fa-solid fa-caret-down"></i> </span
+                    ><span class="dropdown-arrow-up">
+                      <i class="fa-solid fa-caret-up"></i> </span
+                  ></a>
+                  <ul
+                    class="dropdown-menu dropdown-lang pt-0"
+                    aria-labelledby="dropdownMenuLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><img
+                          src="assets/flags/en-flag.png"
+                          alt="england flag"
+                          class="header-flag-icon-img"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item d-lg-none d-inline-block">
+                <div class="mobile-flags-menu-box d-flex">
+                  <a href="#"
+                    ><img
+                      src="assets/flags/lt-flag.png"
+                      alt="lithuania flag"
+                      class="mobile-flag-img"
+                  /></a>
+
+                  <a href="#"
+                    ><img
+                      src="assets/flags/en-flag.png"
+                      alt="england flag"
+                      class="mobile-flag-img"
+                  /></a>
+                </div>
+              </li>
+
+              <li class="nav-item mobile-btn mobile-btn-second">
+                <a href="klientu-zona.html" class="header-btn-outline"
+                  >Klientų zona</a
+                >
+              </li>
+              <li class="nav-item mobile-btn mobile-btn-first">
+                <a href="nuotoline-pagalba.html" class="header-btn-full"
+                  >Nuotolinė pagalba</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="instant-chat-box container d-flex justify-content-end">
+        <img
+          src="assets/icons/instant-chat-icon.png"
+          class="instant-chat-img d-block"
+          alt="instant chat icon"
+        />
+      </div>
+
+      <section class="section-checkout">
+        <div class="container">
+          <div class="row row-steps">
+            <div class="col-12">
+              <div class="steps">
+                <ul
+                  class="steps-list d-flex justify-content-center align-items-center mb-0"
+                >
+                  <li class="step-one text-lg-center step-item d-flex">
+                    <span class="step-img-box step-mobile-one">
+                      <img
+                        src="assets/icons/checkout-step-current.png"
+                        alt="checkout step icon"
+                        class="checkout-step-img"
+                      />
+                    </span>
+                    <div class="step-divider-box">
+                      <hr class="step-divider" />
+                    </div>
+                  </li>
+                  <li class="step-two text-center step-item d-flex">
+                    <span class="step-img-box">
+                      <img
+                        src="assets/icons/checkout-step-two.png"
+                        alt="checkout step icon"
+                        class="checkout-step-img"
+                      />
+                    </span>
+                    <div class="step-divider-box">
+                      <hr class="step-divider" />
+                    </div>
+                  </li>
+                  <li class="step-three text-center step-item d-flex">
+                    <span class="step-img-box">
+                      <img
+                        src="assets/icons/checkout-step-three.png"
+                        alt="checkout step icon"
+                        class="checkout-step-img"
+                      />
+                    </span>
+                    <div class="step-divider-box">
+                      <hr class="step-divider" />
+                    </div>
+                  </li>
+                  <li class="step-four text-center step-item d-flex">
+                    <span class="step-img-box">
+                      <img
+                        src="assets/icons/checkout-step-four.png"
+                        alt="checkout step icon"
+                        class="checkout-step-img"
+                      />
+                    </span>
+                    <div class="step-divider-box">
+                      <hr class="step-divider" />
+                    </div>
+                  </li>
+                  <li
+                    class="step-five text-lg-center text-right step-item d-flex"
+                  >
+                    <span class="step-img-box">
+                      <img
+                        src="assets/icons/checkout-step-five.png"
+                        alt="checkout step icon"
+                        class="checkout-step-img"
+                    /></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row row-steps-names">
+            <div class="col-12 ps-0 pe-0">
+              <div class="steps">
+                <ul
+                  class="step-name-list d-flex justify-content-between align-items-center m-auto"
+                >
+                  <li
+                    class="step-name-one text-lg-center text-left step-name-box"
+                  >
+                    <div
+                      class="step-name step-name-active mt-0 d-none d-lg-block"
+                    >
+                      Mokėjimo periodas
+                    </div>
+                  </li>
+                  <li class="step-name-two text-center step-name-box">
+                    <div class="step-name mt-0 d-none d-lg-block">
+                      Užsakovas
+                    </div>
+                  </li>
+                  <li class="step-name-three text-center step-name-box">
+                    <div class="step-name mt-0 d-none d-lg-block">
+                      Kontaktinė informacija
+                    </div>
+                  </li>
+                  <li class="step-name-four text-center step-name-box">
+                    <div class="step-name mt-0 d-none d-lg-block">
+                      Peržiūra ir patvirtinimas
+                    </div>
+                  </li>
+                  <li
+                    class="step-name-five text-lg-center text-left step-name-box"
+                  >
+                    <div class="step-name mt-0 d-none d-lg-block">
+                      Užsakymas pateiktas
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row row-btn-back">
+            <div class="col-12">
+              <div class="checkout-btn-back-box">
+                <a
+                  href="#"
+                  class="checkout-btn-back d-flex"
+                  onclick="history.back()"
+                  ><div>
+                    <svg
+                      width="20"
+                      height="14"
+                      viewBox="0 0 20 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.71 13.29C8.1 12.9 8.1 12.27 7.71 11.88L3.83 8.00002L19 8.00002C19.55 8.00002 20 7.55002 20 7.00002C20 6.45002 19.55 6.00002 19 6.00002L3.82 6.00002L7.7 2.12002C8.09 1.73002 8.09 1.10002 7.7 0.710019C7.31 0.320019 6.68 0.320019 6.29 0.710019L0.700001 6.30002C0.310001 6.69002 0.310001 7.32002 0.700001 7.71002L6.3 13.29C6.68 13.68 7.32 13.68 7.71 13.29Z"
+                        fill="#808080"
+                        class="checkout-btn-back-icon"
+                      />
+                      >
+                    </svg>
+                  </div>
+
+                  <div>Atgal</div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row row-checkout-content gx-2">
+            <div class="col-lg-8 ps-lg-0 col-sm-12 ps-0 pe-0 pe-lg-1">
+              <div class="row row-checkout-product pb-1">
+                <div class="checkout-product-card cardborder-0">
+                  <div class="row row-checkout-product-info">
+                    <div class="col-md-4 col-12 ps-0 pb-1 pb-md-0 pe-0 pe-md-1">
+                      <img
+                        src="assets/img/checkout-product-img.png"
+                        alt="product image"
+                        class="checkout-product-img img-fluid w-100"
+                      />
+                    </div>
+                    <div class="col-md-8 col-12 ps-0 ps-md-1 pt-1 pt-md-0">
+                      <h4 class="checkout-product-title">
+                        MacBook Pro 16" M1 Pro 10-core CPU 16-core
+                        GPU/16GB/512GB SSD/Space Gray/US
+                      </h4>
+                      <p class="checkout-product-amount-title">Kiekis:</p>
+                      <div
+                        class="checkout-product-amount-box d-flex align-items-center"
+                      >
+                        <button
+                          id="decrement"
+                          class="checkout-product-amount-btn-minus"
+                          onclick="stepper(this)"
+                        >
+                          <img
+                            src="assets/icons/checkout-product-amount-minus.png"
+                            alt=""
+                          />
+                        </button>
+                        <input
+                          type="number"
+                          min="0"
+                          max="99"
+                          step="1"
+                          value="1"
+                          id="my-products-amount"
+                          class="checkout-product-amount-number text-center"
+                          readonly
+                        />
+                        <button
+                          id="increment"
+                          class="checkout-product-amount-btn-plus"
+                          onclick="stepper(this)"
+                        >
+                          <img
+                            src="assets/icons/checkout-product-amount-plus.png"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-checkout-product-properties">
+                    <div class="col-12 ps-0 pe-0">
+                      <p>
+                        <button
+                          class="btn w-100 d-flex justify-content-between align-items-center checkout-product-properties-btn"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseExample"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          <span>Parametrai</span>
+                          <img
+                            src="assets/icons/checkout-product-properties-arrow-down.png"
+                            alt="arrow down icon"
+                            class="checkout-properties-dropdown-arrow-down"
+                          />
+                          <img
+                            src="assets/icons/checkout-product-properties-arrow-up.png"
+                            alt="arrow up icon"
+                            class="checkout-properties-dropdown-arrow-up"
+                          />
+                        </button>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="row row-properties-collapse-block">
+                          <div
+                            class="col-sm-4 col-5 justify-content-start ps-1"
+                          >
+                            <span class="checkout-product-properties-item-name"
+                              >Ekranas</span
+                            >
+                          </div>
+                          <div class="col-sm-8 col-6 ps-sm-2 ps-1 pe-1">
+                            <span
+                              class="checkout-product-properties-item-features"
+                              >16,2 colių „Liquid Retina XDR“</span
+                            >
+                          </div>
+                          <div class="col-12 pricing-divider-box">
+                            <hr class="pricing-divider" />
+                          </div>
+
+                          <div
+                            class="col-sm-4 col-5 justify-content-start ps-1"
+                          >
+                            <span class="checkout-product-properties-item-name"
+                              >Procesorius</span
+                            >
+                          </div>
+                          <div class="col-sm-8 col-6 ps-sm-2 ps-1 pe-1">
+                            <span
+                              class="checkout-product-properties-item-features"
+                              >10 branduolių „Apple M1 Pro“ lustas</span
+                            >
+                          </div>
+                          <div class="col-12 pricing-divider-box">
+                            <hr class="pricing-divider" />
+                          </div>
+
+                          <div
+                            class="col-sm-4 col-5 justify-content-start ps-1"
+                          >
+                            <span class="checkout-product-properties-item-name"
+                              >Atmintis</span
+                            >
+                          </div>
+
+                          <div class="col-sm-8 col-6 ps-sm-2 ps-1 pe-1">
+                            <span
+                              class="checkout-product-properties-item-features"
+                              >16GB</span
+                            >
+                          </div>
+                          <div class="col-12 pricing-divider-box">
+                            <hr class="pricing-divider" />
+                          </div>
+
+                          <div
+                            class="col-sm-4 col-5 justify-content-start ps-1"
+                          >
+                            <span class="checkout-product-properties-item-name"
+                              >Grafika</span
+                            >
+                          </div>
+                          <div class="col-sm-8 col-6 ps-sm-2 ps-1 pe-1">
+                            <span
+                              class="checkout-product-properties-item-features"
+                              >16 branduolių „Apple M1 Pro“ lustas</span
+                            >
+                          </div>
+                          <div class="col-12 pricing-divider-box">
+                            <hr class="pricing-divider" />
+                          </div>
+
+                          <div
+                            class="col-sm-4 col-5 justify-content-start ps-1"
+                          >
+                            <span class="checkout-product-properties-item-name"
+                              >Kamera</span
+                            >
+                          </div>
+                          <div class="col-sm-8 col-6 ps-sm-2 ps-1 pe-1">
+                            <span
+                              class="checkout-product-properties-item-features"
+                              >1080p FaceTime HD camera</span
+                            >
+                          </div>
+                          <div class="col-12 pricing-divider-box">
+                            <hr class="pricing-divider" />
+                          </div>
+
+                          <div
+                            class="col-sm-4 col-5 justify-content-start ps-1"
+                          >
+                            <span class="checkout-product-properties-item-name"
+                              >Jungtys</span
+                            >
+                          </div>
+                          <div class="col-sm-8 col-6 ps-sm-2 ps-1 pe-1">
+                            <span
+                              class="checkout-product-properties-item-features d-flex flex-column"
+                            >
+                              <div>3x Thunderbolt 4 (USB-C)</div>
+                              <div>HDMI</div>
+                              <div>3.5 mm audio</div>
+                              <div>MagSafe 3</div>
+                              <div>SDXC kortelių skaitytuvas</div>
+                            </span>
+                          </div>
+                          <div class="col-12 pricing-divider-box">
+                            <hr class="pricing-divider" />
+                          </div>
+
+                          <div
+                            class="col-sm-4 col-5 justify-content-md-start ps-1"
+                          >
+                            <span class="checkout-product-properties-item-name"
+                              >Akumuliatorius</span
+                            >
+                          </div>
+                          <div class="col-sm-8 col-6 ps-sm-2 ps-1 pe-1">
+                            <span
+                              class="checkout-product-properties-item-features"
+                              ><div>Iki 21 val. filmų peržiūra</div>
+                              <div>Iki 14 val. naršymo internete</div>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-checkout-period pt-1 pb-1 pb-lg-0">
+                <div class="card border-0 checkout-period-card">
+                  <h4 class="checkout-period-heading">Mokėjimo periodas</h4>
+                  <div class="checkout-heading-divider-box">
+                    <hr class="checkout-heading-divider" />
+                  </div>
+                  <div class="checkout-period-box d-flex text-center">
+                    <div class="form-check ps-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="period-one-month"
+                        value="customer-private"
+                        checked="checked"
+                      />
+                      <label
+                        class="form-check-label checkout-period-btn btn"
+                        for="period-one-month"
+                        >1 mėn.</label
+                      >
+                    </div>
+                    <div class="form-check ps-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="period-three-months"
+                        value="customer-company"
+                      />
+                      <label
+                        class="form-check-label checkout-period-btn btn"
+                        for="period-three-months"
+                        >3 mėn.</label
+                      >
+                    </div>
+                    <div class="form-check ps-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="period-six-months"
+                        value="customer-company"
+                      />
+                      <label
+                        class="form-check-label checkout-period-btn btn"
+                        for="period-six-months"
+                        >6 mėn.</label
+                      >
+                    </div>
+                    <div class="form-check ps-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="period-one-year"
+                        value="customer-company"
+                      />
+                      <label
+                        class="form-check-label checkout-period-btn btn"
+                        for="period-one-year"
+                        >1 m.</label
+                      >
+                    </div>
+                    <div class="form-check ps-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="period-two-years"
+                        value="customer-company"
+                      />
+                      <label
+                        class="form-check-label checkout-period-btn btn"
+                        for="period-two-years"
+                        >2 m.</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 ps-lg-1 pe-0 ps-0 pt-1 pt-lg-0">
+              <div class="card border-0 checkout-pricing-card">
+                <h4 class="pricing-plan-title">IT ūkio priežiūros planas</h4>
+                <p class="pricing-plan-details">1 metų planas (34 €/val.)</p>
+                <div class="pricing-amount-box d-flex justify-content-between">
+                  <span class="pricing-amount-title">Kiekis:</span
+                  ><span class="pricing-amount">1</span>
+                </div>
+                <div class="pricing-divider-box">
+                  <hr class="pricing-divider" />
+                </div>
+                <div class="pricing-price-box d-flex justify-content-between">
+                  <span class="pricing-price-title">Kaina:</span>
+                  <span class="pricing-price">58,32 €</span>
+                </div>
+                <div class="pricing-divider-box">
+                  <hr class="pricing-divider" />
+                </div>
+                <div class="pricing-vat-box d-flex justify-content-between">
+                  <span class="pricing-vat-title">PVM: 20%</span>
+                  <span class="pricing-vat">2,32 €</span>
+                </div>
+                <div class="pricing-divider-box">
+                  <hr class="pricing-divider" />
+                </div>
+                <div
+                  class="pricing-discount-box d-flex justify-content-between"
+                >
+                  <span class="pricing-discount-title"
+                    >Suteiktų nuolaidų suma:</span
+                  >
+                  <span class="pricing-discount">1,32 €</span>
+                </div>
+                <div class="pricing-divider-box">
+                  <hr class="pricing-divider" />
+                </div>
+                <div class="pricing-total-box d-flex justify-content-between">
+                  <span class="pricing-total-title">Iš viso:</span>
+                  <span class="pricing-total">60,64 €</span>
+                </div>
+                <a
+                  href="technikos-nuoma_uzsakovas.html"
+                  class="checkout-btn-next text-center"
+                  >Tęsti
+                  <img
+                    src="assets/icons/arrow-right-white.png"
+                    alt="arrow right icon"
+                    class="checkout-btn-next-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container-fluid">
+      <div class="card border-0 checkout-pop-up-card d-none">
+        <button class="btn p-0 pop-up-close-btn">
+          <img
+            src="assets/icons/pop-up-close-icon.png"
+            alt="close icon"
+            class="pop-up-close-icon-img"
+          />
+        </button>
+        <div
+          class="row row-footer-pop-up text-center d-flex align-items-center"
+        >
+          <div>
+            <div class="col-12">
+              <h4 class="pop-up-heading">Naujienlaiškis užprenumeruotas!</h4>
+            </div>
+
+            <div class="col-12">
+              <img
+                src="assets/img/checkout-envelope-order-done.png"
+                alt="envelope illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row gx-0 footer-main-columns">
+          <div class="col-xl-3 col-lg-3 col-12">
+            <div class="footer-logo-box">
+              <img
+                src="assets/img/prasom-logo-white-179.png"
+                srcset="
+                  assets/img/prasom-logo-white-179.png,
+                  assets/img/prasom-logo-white-357.png 2x,
+                  assets/img/prasom-logo-white-536.png 3x
+                "
+                alt="prasom logo"
+              />
+            </div>
+            <div class="footer-contacts">
+              <div class="footer-address-box">
+                <img src="assets/icons/footer-address-icon.svg" alt="" />
+                <span>Adreso g. 45, Vilnius, 12545 </span>
+              </div>
+              <div class="footer-mobile-box">
+                <img src="assets/icons/footer-mobile-icon.svg" alt="" />
+                <span>+37052542888</span>
+              </div>
+              <div class="footer-email-box">
+                <img src="assets/icons/footer-email-icon.svg" alt="" />
+                <span>vilnius@prasom.lt</span>
+              </div>
+            </div>
+            <div class="footer-soc-icons-box">
+              <a href="#"
+                ><img src="assets/icons/fb-logo.svg" alt="facebook-logo"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/in-logo.svg" alt="linkedin logo"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/ig-logo.svg" alt="instagram logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+            <h4 class="heading-quaternary">Paslaugos</h4>
+            <ul class="footer-paslaugos-box">
+              <li>
+                <a href="nuotoline-pagalba.html" class="footer-menu-link"
+                  >Nuotolinė pagalba</a
+                >
+              </li>
+              <li>
+                <a href="klientu-zona.html" class="footer-menu-link"
+                  >Klientų zona</a
+                >
+              </li>
+              <li>
+                <a href="it-ukio-prieziura.html" class="footer-menu-link"
+                  >IT ūkio priežiūra</a
+                >
+              </li>
+              <li>
+                <a href="dedikuoto-serverio-nuoma.html" class="footer-menu-link"
+                  >Dedikuoto serverio nuoma</a
+                >
+              </li>
+              <li>
+                <a href="web-hostingas.html" class="footer-menu-link"
+                  >Web hostingo planai</a
+                >
+              </li>
+              <li>
+                <a href="technikos-nuoma.html" class="footer-menu-link"
+                  >Technikos nuoma</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+            <h4 class="heading-quaternary">Apie mus</h4>
+            <ul class="footer-apie-box">
+              <li>
+                <a href="kontaktai.html" class="footer-menu-link">Kontaktai</a>
+              </li>
+              <li>
+                <a href="naujienos.html" class="footer-menu-link">Naujienos</a>
+              </li>
+              <li><a href="duk.html" class="footer-menu-link">DUK</a></li>
+              <li>
+                <a href="privatumo-politika.html" class="footer-menu-link"
+                  >Privatumo politika</a
+                >
+              </li>
+              <li>
+                <a href="slapukų-politika.html" class="footer-menu-link"
+                  >Slapukų politika</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-5 col-12">
+            <div class="footer-subscription-box">
+              <h4 class="heading-quaternary">
+                Prenumeruokite mūsų naujienlaiškį!
+              </h4>
+              <label for="inputSubscribe" class="form-label"></label>
+              <input
+                type="email"
+                class="form-control footer-subscription-input"
+                placeholder="El. paštas"
+                id="inputSubscribe"
+              />
+              <button class="footer-btn" type="submit">Prenumeruoti</button>
+              <div class="subscription-popup-success"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-0 justify-content-between copyright-row">
+          <div class="col-lg-auto col-sm-auto">
+            <div class="footer-policy">
+              <a href="privatumo-politika.html" class="footer-menu-link"
+                >Privatumo politika</a
+              >
+              |
+              <a href="slapukų-politika.html" class="footer-menu-link"
+                >Slapukų politika</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-auto col-sm-auto col-12">
+            <div class="footer-copyright">
+              Visos teisės saugomos &#169; 2022 prasom.lt
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CUSTOM SCRIPTS -->
+    <!-- Header menu paslaugos dropdown full page -->
+    <script>
+      const btnNavEl = document.querySelector(".btn-mobile-nav");
+      const headerEl = document.querySelector(".header");
+
+      btnNavEl.addEventListener("click", function () {
+        headerEl.classList.toggle("nav-open");
+      });
+    </script>
+    <!-- Get the current year for the copyright -->
+    <script>
+      $("#year").text(new Date().getFullYear());
+    </script>
+
+    <!-- Product amount calculator -->
+    <script>
+      const myProductsAmount = document.getElementById("my-products-amount");
+      function stepper(btn) {
+        let id = btn.getAttribute("id");
+        let min = myProductsAmount.getAttribute("min");
+        let max = myProductsAmount.getAttribute("max");
+        let step = myProductsAmount.getAttribute("step");
+        let val = myProductsAmount.getAttribute("value");
+        let calcStep = id == "increment" ? step * 1 : step * -1;
+        let newValue = parseInt(val) + calcStep;
+
+        if (newValue >= min && newValue <= max) {
+          myProductsAmount.setAttribute("value", newValue);
+        }
+      }
+    </script>
+  </body>
+</html>

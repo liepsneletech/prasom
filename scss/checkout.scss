@@ -1,0 +1,846 @@
+/* ********************************************************/
+/*    CUSTOM SECTION STYLES */
+/* ********************************************************/
+
+.section-checkout {
+  background-color: #fafafa;
+  padding-top: 3.2rem;
+  padding-bottom: 10.4rem;
+}
+
+.step-name {
+  font-size: 1.4rem;
+  color: #d9d9d9;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.step-name-active {
+  color: #5551ff;
+}
+
+.step-name-done {
+  color: #514f58;
+}
+
+.step-item {
+  width: 17.9rem;
+}
+
+.step-item:last-of-type {
+  width: auto;
+}
+
+// Checkout
+
+.checkout-btn-back:link,
+.checkout-btn-back:visited {
+  text-decoration: none;
+  color: #808080;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.checkout-btn-back:hover,
+.checkout-btn-back:active {
+  color: #5551ff;
+}
+
+.checkout-btn-back:hover .checkout-btn-back-icon {
+  fill: #5551ff;
+}
+
+.checkout-btn-back {
+  gap: 8px;
+}
+
+.step-img-box {
+  position: relative;
+}
+
+.checkout-step-img {
+  width: 24px;
+  height: 24px;
+}
+
+.step-divider-box {
+  width: 100%;
+}
+
+.step-divider {
+  height: 2px !important;
+  background-color: #d9d9d9;
+  border-radius: 1px;
+  opacity: 1;
+}
+
+.step-name-box {
+  min-width: 17.9rem;
+  line-height: 1.5;
+}
+
+.step-name-list {
+  max-width: 89.5rem;
+}
+.row-steps {
+  margin-bottom: 8px;
+}
+
+.row-steps-names {
+  max-width: 89.5rem;
+  margin: auto;
+}
+
+.step-name-active {
+  color: #5551ff;
+}
+
+.row-btn-back {
+  margin-bottom: 1.6rem;
+}
+
+.checkout-pricing-card,
+.checkout-product-card,
+.checkout-period-card,
+.checkout-customer-card,
+.checkout-order-done-card,
+.checkout-payment-methods-card {
+  padding: 4rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #bbc0d040;
+  background-color: #fff;
+}
+
+.pricing-plan-title,
+.pricing-total-box {
+  font-size: 1.8rem;
+  color: #060616;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.pricing-plan-details,
+.pricing-amount-box,
+.pricing-price-box,
+.pricing-vat-box,
+.pricing-discount-box {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #514f58;
+}
+
+.pricing-plan-details {
+  margin-bottom: 3.4rem;
+}
+
+.pricing-divider,
+.checkout-heading-divider,
+.checkout-heading-divider,
+.checkout-properties-divider {
+  background-color: #eeeeee;
+  height: 1px;
+  opacity: 1;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.checkout-heading-divider {
+  margin-bottom: 3.2rem;
+}
+
+.checkout-btn-next-icon {
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.checkout-btn-next:link,
+.checkout-btn-next:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #fff;
+  background-color: #5551ff;
+  border-radius: 2.4rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  width: 100%;
+  margin-top: 3.2rem;
+}
+
+.checkout-btn-next:hover,
+.checkout-btn-next:active {
+  background-color: #4340dd;
+}
+
+// ------------Produktas
+
+.checkout-product-img {
+  border-radius: 8px;
+}
+
+.row-checkout-product-info {
+  margin-bottom: 2.4rem;
+}
+
+.checkout-product-properties-btn,
+.checkout-product-properties-btn:hover,
+.checkout-product-properties-btn:active,
+.checkout-product-properties-btn:visited,
+.checkout-product-properties-btn:focus {
+  background-color: #fafafa;
+  border: none;
+  font-size: 1.6rem;
+  color: #2c2c33;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-radius: 8px;
+  box-shadow: none;
+  outline: 0;
+}
+
+.checkout-properties-dropdown-arrow-up,
+.checkout-properties-dropdown-arrow-down {
+  width: 24px;
+  height: 24px;
+}
+
+.checkout-product-properties-btn[aria-expanded="true"]
+  .checkout-properties-dropdown-arrow-down {
+  display: none;
+}
+
+.checkout-product-properties-btn[aria-expanded="false"]
+  .checkout-properties-dropdown-arrow-up {
+  display: none;
+}
+
+.checkout-product-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #2c2c33;
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
+
+.checkout-product-amount-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2c2c33;
+  line-height: 1.5;
+}
+
+.checkout-product-amount-minus,
+.checkout-product-amount-plus {
+  background-color: #fafafa;
+  color: #a7a7a7;
+  font-size: 1.6rem;
+  display: inline-block;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+.checkout-product-amount-number {
+  font-size: 1.6rem;
+  color: #221f20;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.checkout-product-amount-box {
+  gap: 8px;
+}
+
+.checkout-product-properties-box,
+.checkout-review-details-box {
+  gap: 2.4rem;
+}
+
+.checkout-product-properties-item-name,
+.checkout-review-details-item-name,
+.checkout-product-properties-item-features,
+.checkout-review-features-item,
+.checkout-review-features {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #514f58;
+}
+
+.checkout-product-properties-item-name,
+.checkout-review-details-item-name {
+  color: #2c2c33;
+  font-weight: 500;
+  width: 23rem;
+}
+
+.checkout-review-details-item-name {
+  min-width: 23rem;
+}
+
+// ------------Mokėjimo periodas
+
+.checkout-period-heading,
+.checkout-customer-heading,
+.checkout-contacts-heading,
+.checkout-order-done-heading,
+.checkout-payment-methods-heading {
+  font-family: Poppins, sans-serif;
+  font-size: 2.4rem;
+  color: #2c2c33;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.checkout-period-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+
+.step-divider-active {
+  height: 2px !important;
+  background-color: #5551ff;
+  border-radius: 1px;
+  opacity: 1;
+}
+
+.checkout-product-amount-btn-plus,
+.checkout-product-amount-btn-minus {
+  border: none;
+  background: transparent;
+}
+
+.checkout-product-amount-btn-plus img,
+.checkout-product-amount-btn-minus img {
+  width: 32px;
+  height: 32px;
+}
+
+.checkout-product-amount-number {
+  -moz-appearance: textfield;
+  border: none;
+  width: 2rem;
+}
+
+.checkout-product-amount-number::-webkit-inner-spin-button,
+.checkout-product-amount-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// ------------Užsakovas
+
+.checkout-customer-box,
+.checkout-payment-methods-box {
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+  flex-wrap: wrap;
+}
+
+.checkout-customer-box .form-check,
+.checkout-payment-methods-box .form-check {
+  padding: 0;
+}
+
+.checkout-customer-box input[type="radio"],
+.checkout-period-box input[type="radio"],
+.checkout-payment-methods-box input[type="radio"] {
+  display: none;
+}
+
+.checkout-customer-box label,
+.checkout-period-box label,
+.checkout-payment-methods-box label {
+  box-shadow: inset 0 0 0 1px #eeeeee;
+  border-radius: 2.4rem;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding: 1.2rem 2.4rem 1.2rem 2.4rem;
+  color: #2c2c33;
+}
+
+.checkout-period-box label {
+  min-width: 9.7rem;
+}
+
+.checkout-customer-box input[type="radio"]:checked + label,
+.checkout-period-box input[type="radio"]:checked + label,
+.checkout-payment-methods-box input[type="radio"]:checked + label {
+  box-shadow: inset 0 0 0 1px #5551ff;
+}
+
+.checkout-customer-requisites-title,
+.checkout-customer-responsible-person-title,
+.checkout-contacts-title,
+.checkout-contacts-title {
+  font-size: 1.8rem;
+  color: #2c2c33;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.checkout-payment-methods-title {
+  font-size: 1.8rem;
+  color: #2c2c33;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.checkout-customer-info-block input,
+.checkout-contacts-block input {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 1.2rem;
+  margin-top: 0 !important;
+  border-radius: 4px;
+  border-color: #d9d9d9;
+  resize: none;
+}
+
+.checkout-customer-info-block input::placeholder,
+.checkout-contacts-block input::placeholder {
+  color: #a7a7a7;
+}
+
+.row-checkout-requisites,
+.row-checkout-payment-methods {
+  margin-bottom: 3.2rem;
+}
+
+.checkout-customer-company-helper {
+  font-size: 1.2rem;
+  color: #808080;
+  line-height: 1.5;
+  padding-top: 8px;
+  padding-bottom: 1.2rem;
+}
+
+// ------------Kontaktinė informacija
+
+.row-checkout-address {
+  margin-bottom: 3.2rem;
+}
+
+.row-checkout-contacts {
+  margin-bottom: 3.2rem;
+}
+
+.checkout-contacts-checkbox[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+.checkout-contacts-checkbox[type="checkbox"] {
+  background-image: url("http://prasom.monikaliepsnele.lt/assets/icons/checkout_checkbox_unchecked.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 19px;
+  height: 19px;
+}
+
+.checkout-contacts-checkbox[type="checkbox"]:checked {
+  background-image: url("http://prasom.monikaliepsnele.lt/assets/icons/checkout_checkbox_checked.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  border-radius: 1px;
+}
+
+.checkout-contacts-checkbox[type="checkbox"]:focus {
+  box-shadow: none;
+}
+
+.checkout-contacts-checkbox-label {
+  font-size: 1.4rem;
+  color: #404143;
+  line-height: 1.5;
+  font-weight: 400;
+  border-radius: 1px;
+}
+
+.checkout-contacts-checkbox-box {
+  gap: 8px;
+}
+
+.checkboxes-gap {
+  gap: 1.6rem;
+}
+
+.checkout-checkbox-link:link,
+.checkout-checkbox-link:visited {
+  color: #5551ff;
+}
+
+.checkout-checkbox-link:hover,
+.checkout-checkbox-link:active {
+  color: #3f3dd1;
+}
+
+// ------------Peržiūra ir patvirtinimas
+
+.checkout-review-block .card-body {
+  padding: 0;
+}
+
+.checkout-review-features-item {
+  margin-bottom: 0.4rem;
+}
+
+// ------------Užsakymas pateiktas
+
+.checkout-order-done-heading {
+  margin-bottom: 8px;
+}
+
+.checkout-order-done-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+}
+
+.checkout-order-done-card-top-margin {
+  margin-top: 3.2rem;
+}
+
+.row-order-done-block img {
+  width: 62px;
+  height: 56px;
+}
+
+// --------------- Mokėjimo būdas
+
+.checkout-payment-methods-box label {
+  height: 8rem;
+  border-radius: 4rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  min-width: 17.3rem;
+}
+
+.row-checkout-payment-methods,
+.checkout-payment-methods-margin-bottom {
+  margin-bottom: 0;
+}
+
+.checkout-payment-methods-card {
+  padding-right: 3.5rem;
+}
+
+// ----------------Custom padding margins
+
+.checkout-padding-bottom-mokejimo-periodas {
+  padding-bottom: 22.1rem;
+}
+
+.checkout-padding-bottom-uzsakymas-pateiktas {
+  padding-bottom: 30.1rem;
+}
+
+/* ********************************************************/
+/* BOOTSTRAP BETWEEN BREAKPOINTS */
+/* ********************************************************/
+/* col-xl ≥ 1200px */
+@media (min-width: 1200px) {
+}
+
+/* 992px ≤ col-lg ≤ 1200px */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .row-steps-names {
+    margin-bottom: 3.2rem;
+  }
+
+  .checkout-pricing-card,
+  .checkout-customer-card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* ********************************************************/
+
+/* 768px ≤ col-md ≤ 992px */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* ********************************************************/
+
+/*  576px ≤ col-sm ≤ 768px */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .checkout-product-properties-item-name {
+    width: 18rem;
+  }
+
+  .checkout-review-details-item-name {
+    min-width: 23rem;
+  }
+}
+
+/* col < 576px */
+
+@media (max-width: 576px) {
+  .checkout-product-properties-item-name {
+    width: 9.3rem;
+  }
+
+  .checkout-product-properties-item-features {
+    width: 19.4rem;
+  }
+
+  .checkout-product-properties-box .checkout-product-properties-item-name {
+    font-size: 1.5rem;
+  }
+
+  .row-checkout-product-properties .card-body {
+    padding: 0;
+  }
+
+  .checkout-customer-box,
+  .checkout-period-box,
+  .checkout-payment-methods-box {
+    gap: 1.6rem;
+  }
+
+  .checkout-padding-bottom-mokejimo-periodas {
+    padding-bottom: 10.4rem;
+  }
+
+  .checkout-padding-bottom-uzsakymas-pateiktas {
+    padding-bottom: 15.8rem;
+  }
+
+  .checkout-payment-methods-box label {
+    min-width: 15.7rem;
+  }
+
+  .checkout-payment-methods-box label img {
+    max-width: 11rem;
+  }
+}
+
+/* ********************************************************/
+/* CUSTOM BREAKPOINTS */
+/* ********************************************************/
+
+/*  320px ≤ col ≤ 992px */
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+  .row-steps-names {
+    margin-bottom: 3.2rem;
+    max-width: 74.4rem !important;
+  }
+
+  .checkout-pricing-card,
+  .checkout-product-card,
+  .checkout-period-card,
+  .checkout-customer-card,
+  .checkout-payment-methods-card,
+  .checkout-order-done-card {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .checkout-product-card {
+    padding-top: 2.4rem;
+  }
+
+  .step-name-list {
+    max-width: 74rem;
+  }
+
+  .step-mobile-one::after {
+    position: absolute;
+    content: "Mokėjimo periodas";
+    font-size: 1.4rem;
+    color: #5551ff;
+    font-weight: 500;
+    left: 0;
+    right: 0;
+    bottom: -2.6rem;
+    min-width: 18rem;
+  }
+
+  .step-mobile-two::after {
+    position: absolute;
+    content: "Užsakovas";
+    font-size: 1.4rem;
+    color: #5551ff;
+    font-weight: 500;
+    left: -7.8rem;
+    bottom: -2.6rem;
+    min-width: 18rem;
+  }
+
+  .step-mobile-three::after {
+    position: absolute;
+    content: "Kontaktinė informacija";
+    font-size: 1.4rem;
+    color: #5551ff;
+    font-weight: 500;
+    left: -7.6rem;
+    bottom: -2.6rem;
+    min-width: 18rem;
+  }
+
+  .step-mobile-four::after {
+    position: absolute;
+    content: "Peržiūra ir patvirtinimas";
+    font-size: 1.4rem;
+    color: #5551ff;
+    font-weight: 500;
+    left: -7.6rem;
+    right: 0;
+    bottom: -2.6rem;
+    min-width: 18rem;
+  }
+
+  .step-mobile-five::after {
+    position: absolute;
+    content: "Užsakymas pateiktas";
+    font-size: 1.4rem;
+    color: #5551ff;
+    font-weight: 500;
+    left: -11.1rem;
+    bottom: -2.7rem;
+    min-width: 18rem;
+  }
+
+  .row-btn-back {
+    margin-top: 5.4rem;
+  }
+
+  .checkout-order-done-card-top-margin {
+    margin-top: 5.9rem;
+  }
+}
+
+/* ********************************************************/
+/*  320px ≤ col ≤ 576px */
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+}
+
+/* < 400px (Small mobile) */
+
+@media (max-width: 400px) {
+  .row-steps-names {
+    margin-bottom: 3.2rem;
+  }
+
+  .checkout-pricing-card,
+  .checkout-product-card,
+  .checkout-period-card,
+  .checkout-customer-card,
+  .checkout-payment-methods-card,
+  .checkout-order-done-card {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .checkout-product-properties-box,
+  .checkout-review-details-box {
+    flex-direction: column;
+  }
+
+  .checkout-product-properties-box,
+  .checkout-review-details-box {
+    margin-top: 1.2rem;
+  }
+
+  .step-mobile-one::after {
+    position: absolute;
+    content: "Mokėjimo periodas";
+    font-size: 1.4rem;
+    color: #5551ff;
+    font-weight: 500;
+    left: 0;
+    right: 0;
+    bottom: -2.6rem;
+    min-width: 18rem;
+  }
+
+  .step-mobile-two::after {
+    position: absolute;
+    content: "Užsakovas";
+    font-size: 1.4rem;
+    color: #5551ff;
+    font-weight: 500;
+    left: -7.8rem;
+    bottom: -2.6rem;
+    min-width: 18rem;
+  }
+
+  .step-mobile-three::after {
+    position: absolute;
+    content: "Kontaktinė informacija";
+    font-size: 1.4rem;
+    color: #5551ff;
+    font-weight: 500;
+    left: -7.6rem;
+    bottom: -2.6rem;
+    min-width: 18rem;
+  }
+
+  .step-mobile-four::after {
+    position: absolute;
+    content: "Peržiūra ir patvirtinimas";
+    font-size: 1.4rem;
+    color: #5551ff;
+    font-weight: 500;
+    left: -7.6rem;
+    right: 0;
+    bottom: -2.6rem;
+    min-width: 18rem;
+  }
+
+  .step-mobile-five::after {
+    position: absolute;
+    content: "Užsakymas pateiktas";
+    font-size: 1.4rem;
+    color: #5551ff;
+    font-weight: 500;
+    left: -11.1rem;
+    bottom: -2.7rem;
+    min-width: 18rem;
+  }
+
+  .row-review-block .col-5,
+  .row-checkout-product-properties .col-5 {
+    min-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .row-review-block .col-7 {
+    min-width: 100%;
+    padding-left: 0 !important;
+  }
+
+  .row-checkout-product-properties .col-6 {
+    min-width: 100%;
+  }
+
+  .checkout-review-features-item,
+  .checkout-product-properties-item-features {
+    margin-bottom: 0.6rem;
+  }
+}

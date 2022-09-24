@@ -1,0 +1,620 @@
+/* ********************************************************/
+/* BOOTSTRAP BETWEEN BREAKPOINTS */
+/* ********************************************************/
+/* col-xl ≥ 1200px */
+@media (min-width: 1200px) {
+}
+
+/* 992px ≤ col-lg ≤ 1200px */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .footer h4 {
+    margin-top: 0 !important;
+  }
+
+  .custom-gutter-paslaugos > [class*="col-"]:first-child {
+    padding-left: 0;
+  }
+
+  .custom-gutter-paslaugos > [class*="col-"]:last-child {
+    padding-right: 0;
+  }
+
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(2) {
+    padding-right: 1.2rem !important;
+  }
+
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(3) {
+    padding-left: 1.2rem !important;
+  }
+
+  .susisiekti-img {
+    max-height: 41.3rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .paslaugos-dropdown-list {
+    flex-direction: row !important;
+  }
+
+  .paslaugos-submeniu.show {
+    border-top: 2px solid #f2f1ff !important;
+  }
+
+  .navbar-nav {
+    gap: 3.2rem;
+  }
+
+  .container {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+
+  .paslaugos-col-style-pink,
+  .paslaugos-col-style-yellow,
+  .paslaugos-col-style-green {
+    min-height: 81rem;
+  }
+
+  .paslaugos-col-style-purple {
+    min-height: 86rem;
+  }
+
+  .susisiekti-img {
+    max-height: 37rem !important;
+  }
+}
+
+/* ********************************************************/
+
+/* 768px ≤ col-md ≤ 992px */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-nav:first-child::after {
+    border-bottom: 3px solid red;
+  }
+
+  .footer-policy {
+    margin-bottom: 1.6rem;
+  }
+
+  .footer-copyright,
+  .footer-policy {
+    text-align: center;
+  }
+
+  .footer {
+    min-height: 55rem;
+  }
+
+  .section-hero.container-fluid {
+    min-height: 84.6rem !important;
+    padding-top: 0 !important;
+  }
+
+  .hero-row-height {
+    min-height: 84.6rem !important;
+    padding-top: 0 !important;
+  }
+
+  .heading-primary {
+    margin-top: 10.4rem;
+  }
+
+  .hero-description {
+    padding-right: 0;
+  }
+
+  .heading-primary-box {
+    align-self: flex-start !important;
+  }
+
+  .custom-gutter-rekomendacijos > [class*="col-"]:nth-child(2) {
+    padding-right: 0 !important;
+  }
+
+  .susisiekti-img {
+    max-height: 35rem;
+    margin-bottom: 5.6rem;
+  }
+
+  .header .nav-item {
+    width: 50%;
+  }
+
+  .prasom-logo {
+    padding-left: 2.4rem;
+  }
+
+  .header-btn-outline:link,
+  .header-btn-full:link {
+    width: 40% !important;
+  }
+
+  .section-carousel .carousel-indicators {
+    visibility: hidden !important;
+  }
+
+  .footer-soc-icons-box {
+    margin-bottom: 3rem;
+  }
+}
+
+/* ********************************************************/
+
+/* 576px ≤ col-sm ≤ 768px */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .footer-paslaugos-box,
+  .footer-apie-box {
+    min-height: 9rem;
+  }
+
+  .footer h4 {
+    margin-top: 0;
+  }
+
+  .footer-policy {
+    margin-bottom: 1.6rem;
+  }
+
+  .footer-copyright,
+  .footer-policy {
+    text-align: center;
+  }
+
+  .footer {
+    min-height: 55rem;
+  }
+
+  .footer-main-columns {
+    margin-bottom: 5.6rem;
+  }
+
+  .footer h4 {
+    margin-top: 5.6rem;
+  }
+
+  .custom-gutter-paslaugos > [class*="col-lg"] {
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+  }
+
+  .susisiekti-img {
+    max-height: 33.6rem;
+    margin-bottom: 5.6rem;
+  }
+
+  .dropdown-menu.show {
+    border-top: none;
+  }
+
+  .section-hero.container-fluid {
+    min-height: 84.6rem !important;
+    padding-top: 0 !important;
+  }
+
+  .hero-row-height {
+    min-height: 84.6rem !important;
+    padding-top: 0 !important;
+  }
+
+  .heading-primary {
+    margin-top: 10.4rem;
+  }
+
+  .hero-description {
+    padding-right: 0;
+  }
+
+  .heading-primary-box {
+    align-self: flex-start !important;
+  }
+
+  .custom-gutter-rekomendacijos > [class*="col-"]:nth-child(2) {
+    padding-right: 0 !important;
+  }
+
+  .header .nav-item {
+    width: 55%;
+  }
+
+  .header-btn-outline:link,
+  .header-btn-full:link {
+    width: 60% !important;
+  }
+
+  .custom-gutter-susisiekti > [class*="col-"]:nth-child(1),
+  .custom-gutter-susisiekti > [class*="col-"]:nth-child(3) {
+    padding-right: 0;
+  }
+
+  .custom-gutter-susisiekti > [class*="col-"]:nth-child(2),
+  .custom-gutter-susisiekti > [class*="col-"]:nth-child(4) {
+    padding-left: 0;
+  }
+
+  .paslaugos-inner-description {
+    padding-right: 2.4rem !important;
+  }
+
+  .section-carousel .carousel-indicators {
+    visibility: hidden !important;
+  }
+
+  .prasom-logo {
+    padding-left: 2.4rem;
+  }
+
+  .checkout-pop-up-card-form {
+    max-width: 92%;
+    padding: 5.6rem 2.4rem 2.4rem 2.4rem !important;
+  }
+}
+
+/* col < 576px */
+
+@media (max-width: 579px) {
+  .footer-paslaugos-box,
+  .footer-apie-box {
+    flex-wrap: wrap;
+    height: 9rem;
+  }
+
+  .footer h4 {
+    margin-top: 5.6rem;
+  }
+
+  .footer-policy {
+    margin-bottom: 1.6rem;
+  }
+
+  .footer-copyright,
+  .footer-policy {
+    text-align: center;
+  }
+
+  .footer {
+    min-height: 55rem;
+  }
+
+  .footer-main-columns {
+    margin-bottom: 5.6rem;
+  }
+
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(1),
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(2),
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(3),
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(4) {
+    padding-left: 0 !important;
+  }
+
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(1),
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(2),
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(3),
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(4) {
+    padding-right: 0 !important;
+  }
+
+  .susisiekti-img {
+    max-height: 27.6rem;
+    margin-bottom: 5.6rem;
+  }
+
+  .susisiekti-btn-full {
+    width: 100% !important;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .logos-box {
+    margin-bottom: 3.7rem;
+  }
+
+  .section-hero.container-fluid {
+    min-height: 84.6rem !important;
+    padding-top: 0 !important;
+  }
+
+  .hero-row-height {
+    min-height: 84.6rem !important;
+    padding-top: 0 !important;
+  }
+
+  .heading-primary {
+    margin-top: 10.4rem;
+  }
+
+  .hero-description {
+    padding-right: 0;
+  }
+
+  .heading-primary-box {
+    align-self: flex-start !important;
+  }
+
+  .custom-gutter-rekomendacijos > [class*="col-"]:first-child {
+    padding-right: 0 !important;
+  }
+
+  .custom-gutter-susisiekti > [class*="col-"]:nth-child(1),
+  .custom-gutter-susisiekti > [class*="col-"]:nth-child(3) {
+    padding-right: 0;
+  }
+
+  .custom-gutter-susisiekti > [class*="col-"]:nth-child(2),
+  .custom-gutter-susisiekti > [class*="col-"]:nth-child(4) {
+    padding-left: 0;
+  }
+
+  .prasom-logo {
+    padding-left: 2.4rem;
+  }
+}
+
+/* ********************************************************/
+/* CUSTOM BREAKPOINTS */
+/* ********************************************************/
+
+/*  320px ≤ col ≤ 992px */
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(2) {
+    padding-right: 0;
+  }
+
+  .custom-gutter-paslaugos > [class*="col-"]:nth-child(3) {
+    padding-left: 0;
+  }
+
+  .paslaugos-dropdown-list {
+    flex-direction: column;
+  }
+
+  header .navbar-nav {
+    background-color: #fff;
+    align-items: flex-start !important;
+    padding-top: 4rem;
+    height: 100vh;
+    gap: 0;
+    overflow-x: hidden;
+  }
+
+  .mobile-btn {
+    padding-left: 2.4rem !important;
+    padding-right: 2.4rem !important;
+    width: 80%;
+  }
+
+  .paslaugos-submeniu.show {
+    border-top: none !important;
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  .navbar-toggler:focus-visible {
+    padding-right: 4rem !important;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+  .navbar-collapse {
+    margin-right: 5.6rem;
+  }
+
+  header {
+    padding-right: 2.8rem;
+    width: 100%;
+  }
+
+  .header-btn-full:link {
+    margin-left: 0;
+  }
+
+  .header .nav-item {
+    padding-left: 2.4rem !important;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    width: 100%;
+  }
+
+  .header .nav-item:nth-of-type(6) {
+    order: 5;
+  }
+
+  .header .nav-item:last-of-type {
+    margin-top: 0.8rem;
+    margin-bottom: -1.6rem;
+  }
+
+  .header .nav-item:nth-of-type(1),
+  .header .nav-item:nth-of-type(2),
+  .header .nav-item:nth-of-type(3),
+  .header .nav-item:nth-of-type(5) {
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .header-btn-outline:link,
+  .header-btn-full:link {
+    display: inline-block !important;
+    text-align: center;
+  }
+
+  .mobile-flags-menu-box {
+    gap: 1.6rem;
+  }
+
+  .paslaugos-dropdown-list {
+    gap: 0.8rem;
+  }
+
+  .paslaugos-dropdown-list a {
+    font-size: 1.4rem !important;
+  }
+
+  .paslaugos-dropdown-item-style img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .paslaugos-dropdown-list {
+    padding-top: 0 !important;
+    padding-bottom: 1.2rem !important;
+    padding-top: 2rem !important;
+  }
+
+  .paslaugos-submeniu.show {
+    margin-top: 0 !important;
+  }
+
+  .instant-chat-img {
+    margin-top: 74rem;
+  }
+
+  .checkout-instant-chat-img {
+    margin-top: 86rem;
+  }
+}
+
+/* ********************************************************/
+/*  320px ≤ col ≤ 576px */
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .header-btn-outline:link,
+  .header-btn-full:link {
+    width: 100%;
+  }
+
+  .section-carousel .carousel-indicators {
+    visibility: hidden;
+  }
+
+  .checkout-pop-up-card {
+    max-width: 92%;
+    padding: 5.6rem 2.4rem 5.6rem 2.4rem !important;
+  }
+
+  .checkout-pop-up-card-form {
+    max-width: 92%;
+    padding: 5.6rem 2.4rem 2.4rem 2.4rem !important;
+  }
+}
+
+/* < 320px (Small mobile) */
+
+@media (max-width: 320px) {
+  .footer-paslaugos-box,
+  .footer-apie-box {
+    flex-wrap: nowrap;
+    margin-bottom: 8rem;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+
+  .custom-gutter-paslaugos > [class*="col-"]:first-child {
+    padding-left: 0;
+  }
+
+  .custom-gutter-paslaugos > [class*="col-"]:last-child {
+    padding-right: 0;
+  }
+
+  .paslaugos-dropdown-list {
+    flex-direction: column;
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  .prasom-logo {
+    padding-left: 2.4rem;
+  }
+
+  .navbar-toggler:focus-visible {
+    padding-right: 4rem !important;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+  .mobile-flags-menu-box {
+    gap: 1.6rem;
+  }
+
+  header .navbar-nav {
+    background-color: #fff;
+    align-items: flex-start !important;
+    padding-top: 4rem;
+    padding-right: 2.8rem;
+    height: 100vh;
+    padding-right: 2.4rem;
+    margin-right: 0.8rem;
+    gap: 0;
+  }
+
+  .header .nav-item {
+    margin-left: 1.7rem;
+    width: 100%;
+    padding: 1.6rem 0 1.6rem 0;
+  }
+
+  .prasom-logo {
+    width: 90%;
+    height: 90%;
+    padding-left: 1.7rem;
+  }
+
+  .hamburger-close-icon,
+  .hamburger-open-icon {
+    padding-right: 1.7rem;
+  }
+
+  .header-btn-outline:link,
+  .header-btn-full:link {
+    display: block !important;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .header-btn-full:link {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .header .nav-item:nth-of-type(1),
+  .header .nav-item:nth-of-type(2),
+  .header .nav-item:nth-of-type(3),
+  .header .nav-item:nth-of-type(5) {
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .section-carousel .carousel-indicators {
+    visibility: hidden !important;
+  }
+
+  .instant-chat-img {
+    margin-top: 74rem;
+  }
+
+  .checkout-pop-up-card {
+    max-width: 92%;
+    padding: 5.6rem 2.4rem 5.6rem 2.4rem !important;
+  }
+
+  .checkout-pop-up-card-form {
+    max-width: 92%;
+    padding: 5.6rem 2.4rem 2.4rem 2.4rem !important;
+  }
+
+  .pop-up-heading.smaller-heading {
+    font-size: 2.5rem;
+  }
+}

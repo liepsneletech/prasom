@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* ********************************************************/
+/*    CUSTOM SECTION STYLES */
+/* **
+
+******************************************************/
+.header {
+  z-index: 2;
+}
+
+.section-apie-mus-hero-bg {
+  background-color: #fafafa;
+}
+
+.paslaugos-inner-hero-height-grey {
+  min-height: 46.4rem;
+}
+
+.paslaugos-inner-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #514f58;
+  padding-top: 0.8rem;
+  padding-right: 12rem;
+}
+
+/* ********************************************************/
+/* BOOTSTRAP BETWEEN BREAKPOINTS */
+/* ********************************************************/
+/* 1200px ≤ col-lg ≤ 1360px */
+/* 992px ≤ col-lg ≤ 1200px */
+/* ********************************************************/
+/* 768px ≤ col-md ≤ 992px */
+/* ********************************************************/
+/* 576px ≤ col-sm ≤ 768px */
+/* col < 576px */
+@media (max-width: 579px) {
+  .paslaugos-inner-description {
+    padding-right: 0;
+  }
+}
+/* ********************************************************/
+/* CUSTOM BREAKPOINTS */
+/* ********************************************************/
+/*  320px ≤ col ≤ 992px */
+@media (min-width: 320px) and (max-width: 991.98px) {
+  .paslaugos-inner-description {
+    margin-bottom: 17.8rem;
+  }
+}
+/* ********************************************************/
+/*  320px ≤ col ≤ 576px */
+/* < 320px (Small mobile) */
+
+/*# sourceMappingURL=apie-mus.css.map */
